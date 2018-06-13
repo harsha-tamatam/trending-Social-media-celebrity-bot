@@ -6,8 +6,8 @@ import pandas as pd
 class tag_recommender(object):
 
     def __init__(self, parameters):
-        self.access_token = parameters.get("access_token","ACCESS_TOKEN")
-        self.client_secret = parameters.get("client_secret","CLIENT_SECRET")
+        self.access_token = ACCESS_TOKEN #Enter your access token here
+        self.client_secret = CLIENT_SECTER #Enter your client secret here
 
     def tag_score(self,multiple_tags):
         complete_data = []
@@ -27,8 +27,7 @@ class tag_recommender(object):
         return(df[df.columns[::-1]].to_string(index=False))
 
 if __name__ == "__main__":
-    parameters = {}
-    obj = tag_recommender(parameters)
-    tags = ["beyonce","taylor swift","cristiano ronaldo","Roger Federer"]   #Enter your input here 
+    obj = tag_recommender()
+    tags = ["beyonce","taylorswift","cristianoronaldo","RogerFederer"]   #Enter your input here 
     result = obj.multiple_insta_tag(tags)
     print(result)
