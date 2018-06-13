@@ -1,6 +1,6 @@
 # Trending-Social-media-celebrity-bot
 Language: Python
-Dependencies: requests ($ pip install requests)
+Dependencies: requests ($ pip install requests) \t
               pandas ($ pip install pandas)
               json ($ pip install simplejson)
               operator ($ pip install operator)
